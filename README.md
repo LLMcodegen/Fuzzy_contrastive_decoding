@@ -15,7 +15,7 @@ pip install fsspec<2023.10.0
 
 ### Code
 
-The main framework of our code is based on [bigcode](https://github.com/bigcode-project/bigcode-evaluation-harness). The following example shows you how to perform USCD on a code generation dataset.
+The main framework of our code is based on [bigcode](https://github.com/bigcode-project/bigcode-evaluation-harness). The following example shows you how to perform Fuzzy-Assisted Contrastive Decoding on a code generation dataset.
 
 ```bash
 cd $current dir
