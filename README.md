@@ -18,8 +18,8 @@ pip install fsspec<2023.10.0
 The main framework of our code is based on [bigcode](https://github.com/bigcode-project/bigcode-evaluation-harness). The following example shows you how to perform USCD on a code generation dataset.
 
 ```bash
-cd ./CodeGen-USCD/model_slurm
-bash codellama_7b_weight_10_-07_pass@1_1.sh
+cd $current dir
+bash run_main.sh
 ```
 
 For detailed usage instructions, please refer to the [bigcode documentation](https://github.com/bigcode-project/bigcode-evaluation-harness?tab=readme-ov-file#documentation).
@@ -38,20 +38,7 @@ We provide the following data used in our experiments:
 We provide the following models used in our experiments:
 
 - Models:
-    - [Llama2-7b](https://huggingface.co/meta-llama/Llama-2-7b): The Llama2-7b model, released by the Meta research team in July 2023, is pre-trained with a parameter architecture of 70 billion.
+    - [Llama3-8b](https://huggingface.co/meta-llama/Llama-2-7b): The Llama2-7b model, released by the Meta research team in July 2023, is pre-trained with a parameter architecture of 70 billion.
     - [CodeLlama-7b](https://huggingface.co/codellama/CodeLlama-7b-hf): The CodeLlama-7b model is fine-tuned based on the Llama model, primarily designed for tasks, e.g., code generation and code understanding.
     - [StarCoder](https://huggingface.co/bigcode/starcoder): The StarCoder model is a 15.5 billion parameter model trained using over 80 programming languages from Stack (v1.2).
     - [WizardCoder](https://huggingface.co/WizardLMTeam/WizardCoder-15B-V1.0): The WizardCoder is fine-tuned by applying the Evol-Instruct to Code LLMs.
-    - [StarCoder](https://huggingface.co/facebook/incoder-6B):  The Incoder-6b is trained on code using a causal-masked objective.
-
-## Cite as
-
-Please cite the paper and star this repo if you use USCD and find it helpful. Feel free to contact wangshuai123@whu.edu.cn or open an issue if you have any questions.
-```
-@article{wang2024mathbb,
-  author = {Shuai Wang, Liang Ding, Li Shen, Yong Luo, Zheng He, Wei Yu, Dacheng Tao},
-  title = {USCD: Improving Code Generation of LLMs by Uncertainty-Aware Selective Contrastive Decoding},
-  journal = {arXiv preprint arXiv:2409.05923},
-  year = {2024},
-}
-```
