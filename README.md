@@ -1,9 +1,5 @@
 # :zap: Fuzzy-Assisted Contrastive Decoding Improving Code Generation of Large Language Models
 
-<div align="center">
-    <img width="80%" alt="image" src="https://github.com/alphadl/CodeGen-USCD/blob/main/img/using_contraste_decoding.PNG">
-</div>
-
 ### Environment
 
 ```bash
